@@ -22,7 +22,7 @@ You cannot use simplistic SQL statements to get answers.
 
 ![screenshot](https://github.com/alexcmak/interval/blob/main/images/problem.png)
 
-First you will need the dates in order, then you will need another column that calculate the number of days between each event.
+First, you will need the dates in order, then you will need another "column" that calculate the number of days between each event.
 Given that table, you can use functions such as AVG(), MAX() and MIN()
 
 ```
@@ -33,7 +33,7 @@ SELECT julianday( LEAD(date, 1, 0) OVER(ORDER BY date ASC) )
 
 ![screenshot](https://github.com/alexcmak/interval/blob/main/images/interval_column.png)
 
-Then you will need some fancy SQL constucts:
+Then you will need some fancy SQL constructs:
 
 ```
 WITH intervals AS (
