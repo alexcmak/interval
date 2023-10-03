@@ -6,4 +6,7 @@ What is the maximum and minimum number of days between the events?
 You cannot use simplistic SQL statements to get answers.
 
 
-![screenshot](https://github.com/alexcmak/interval/blob/images/problem.png)
+![screenshot](https://github.com/alexcmak/interval/blob/main/images/problem.png)
+
+First you will need the dates order, then you will need another column that calculate the number of days between each event.
+Given that table, you can use functions such as AVG(), MAX() and MIN()
