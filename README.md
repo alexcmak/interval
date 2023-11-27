@@ -33,7 +33,7 @@ SELECT julianday( LEAD(date, 1, 0) OVER(ORDER BY date ASC) )
 
 ![screenshot](https://github.com/alexcmak/interval/blob/main/images/interval_column.png)
 
-Then you will need some fancy SQL constructs:
+Then you will need some fancy SQL constructs known as [Window Functions](https://www.sqlite.org/windowfunctions.html):
 
 ```
 WITH intervals AS (
